@@ -2,6 +2,7 @@ let body = document.querySelector("body");
 let header = document.querySelector("h1");
 let button = document.querySelector("button");
 let img = document.querySelector("img");
+let newText = "😈 Goodbye Coders."
 
 // 1. Press the button on the webpage to change it up! Take notice of what happens.
 // - What do you think .style does?
@@ -11,6 +12,10 @@ let img = document.querySelector("img");
 // - Try using a hex color code.
 button.addEventListener("click", function() {
     body.style.backgroundColor = "black";
-    header.style.color = "white";
+    header.style.color = "#0ca5f9";
     img.style.border = "5px solid white";
+});
+
+header.addEventListener("dblclick", function() {
+    header.innerHTML = newText;
 });
